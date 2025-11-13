@@ -118,7 +118,7 @@ fi
 
 # Write Claude auth setup script to documents/orchestrate directory (where unlock_tool.py expects it)
 mkdir -p /orchestrate_user/documents/orchestrate
-cat > /orchestrate_user/documents/orchestrate/claude_setup.sh << 'EOFAUTH'
+cat > /orchestrate_user/documents/orchestrate/setup_claude_auth.sh << 'EOFAUTH'
 #!/bin/bash
 
 # Claude Code Authentication Setup Script
@@ -197,7 +197,7 @@ echo "Setup complete! You can close this window."
 echo ""
 EOFAUTH
 
-chmod +x /orchestrate_user/documents/orchestrate/claude_setup.sh
+chmod +x /orchestrate_user/documents/orchestrate/setup_claude_auth.sh
 
 echo ""
 echo "📄 Instruction file content:"
